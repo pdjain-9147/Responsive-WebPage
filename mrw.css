@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --navbar-height:59px;
+}
+
+/* NAVBAR */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 90%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+
+
+}
+
+#navbar #logo{
+    margin: 7px 9px;
+}
+
+#navbar #logo img{
+    height: 64px;
+    margin: 5px 14px;
+    border-radius: 30%;
+}
+
+#navbar ul{
+    display:flex;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 23px;
+    border-radius: 23px;
+    font-size: 2.3rem;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* HOME SECTION */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    margin: 200px 80px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('bg1.jpeg') no-repeat center center/cover;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.btn{
+    margin: 20px;
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#home h1{
+    align-items: center;
+
+    font-family: 'Samarkan', sans-serif;
+}
+
+#home p{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+/* SERVICES */
+#services-container{
+    background-color: #FEF9E7;
+    padding: 55px;
+}
+#services{
+    display: flex;
+}
+#services .box{
+    border: 3px solid brown;
+    margin: 18px;
+    border-radius:10% ;
+    background-color:#ccd1d176;
+
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 350px;
+    padding: 20px 24px;
+    border-radius: 40px;
+}
+
+/* CLIENT'S */
+.clients-section{
+    background: #eddca7;;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 24px;
+}
+#clients img{
+    height:300px;
+}
+
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 1.3rem;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+}
+
+/* WHATSAPP LINK */
+
+#link img{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    height: 100px;
+
+}
+
+
+/* UTILITY CLASSES */
+.h-primary{
+    font-size: 5.5rem;
+                                                
+}
+.h-secondary{
+    font-size: 3.5rem;
+}
+.center{
+    text-align: center;
+}
